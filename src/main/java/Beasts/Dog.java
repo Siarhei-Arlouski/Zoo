@@ -1,7 +1,12 @@
 package Beasts;
 
 public class Dog extends Beasts {
-    public void smell() {
-        System.out.println("Unique action: Smell");
+
+    public String getDogSmell() {
+        return "Unique action: Smell";
+    }
+
+    public void dogSmell() {
+        System.out.println(getDogSmell());
     }
 }

@@ -1,7 +1,11 @@
 package Fish;
 
 public class ArcherFish extends Fish {
-    public void spittingTechnique() {
-        System.out.println("Unique action: Spitting technique");
+    public String getArcherFishSpittingTechnique() {
+        return "Unique action: Spitting technique";
+    }
+
+    public void archerFishSpittingTechnique() {
+        System.out.println(getArcherFishSpittingTechnique());
     }
 }

@@ -2,56 +2,50 @@ import Beasts.*;
 import Birds.*;
 import Fish.*;
 
-import java.util.Scanner;
-
 public class AnimalOutput {
-    public void animalOutput() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the number:");
-        int number = scanner.nextInt();
-
+    public void animalOutput(int number) {
         switch (number) {
             case 1 -> {
                 System.out.println("Dog");
                 Dog dog = new Dog();
-                dog.breathe();
-                dog.move();
-                dog.smell();
+                dog.animalBreathe();
+                dog.animalMove();
+                dog.dogSmell();
             }
             case 2 -> {
                 System.out.println("Lion");
                 Lion lion = new Lion();
-                lion.breathe();
-                lion.move();
-                lion.roar();
+                lion.animalBreathe();
+                lion.animalMove();
+                lion.lionRoar();
             }
             case 3 -> {
                 System.out.println("Eagle");
                 Eagle eagle = new Eagle();
-                eagle.breathe();
-                eagle.move();
-                eagle.acuteEyesight();
+                eagle.animalBreathe();
+                eagle.animalMove();
+                eagle.eagleAcuteEyesight();
             }
             case 4 -> {
                 System.out.println("Colibri");
                 Colibri colibri = new Colibri();
-                colibri.breathe();
-                colibri.move();
-                colibri.smallSize();
+                colibri.animalBreathe();
+                colibri.animalMove();
+                colibri.colibriMobility();
             }
             case 5 -> {
                 System.out.println("Archer Fish");
                 ArcherFish archerFish = new ArcherFish();
-                archerFish.breathe();
-                archerFish.move();
-                archerFish.spittingTechnique();
+                archerFish.animalBreathe();
+                archerFish.animalMove();
+                archerFish.archerFishSpittingTechnique();
             }
             case 6 -> {
                 System.out.println("Glowing Fish");
                 GlowingFish glowingFish = new GlowingFish();
-                glowingFish.breathe();
-                glowingFish.move();
-                glowingFish.glow();
+                glowingFish.animalBreathe();
+                glowingFish.animalMove();
+                glowingFish.glowingFishGlow();
             }
             default -> System.out.println("Incorrect number");
         }

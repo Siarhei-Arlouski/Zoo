@@ -1,7 +1,11 @@
 package Birds;
 
 public class Colibri extends Birds {
-    public void smallSize() {
-        System.out.println("Unique action: Small size");
+    public String getColibriMobility() {
+        return "Unique action: Mobility";
+    }
+
+    public void colibriMobility() {
+        System.out.println(getColibriMobility());
     }
 }

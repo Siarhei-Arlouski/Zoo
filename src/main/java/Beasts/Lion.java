@@ -1,7 +1,11 @@
 package Beasts;
 
 public class Lion extends Beasts {
-    public void roar() {
-        System.out.println("Unique action: Roar");
+    public String getLionRoar() {
+        return "Unique action: Roar";
+    }
+
+    public void lionRoar() {
+        System.out.println(getLionRoar());
     }
 }

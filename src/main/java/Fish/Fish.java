@@ -3,10 +3,18 @@ package Fish;
 import Interfaces.ActionsInterface;
 
 public class Fish implements ActionsInterface {
-    public void breathe() {
-        System.out.println("Breathing: Through the gills");
+    public String getFishBreathe() {
+        return "Breathing: Through the gills";
     }
-    public void move() {
-        System.out.println("Movement: In water");
+
+    public String getFishMove() {
+        return "Movement: In water";
+    }
+
+    public void animalBreathe() {
+        System.out.println(getFishBreathe());
+    }
+    public void animalMove() {
+        System.out.println(getFishMove());
     }
 }

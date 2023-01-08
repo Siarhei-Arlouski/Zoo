@@ -1,7 +1,11 @@
 package Fish;
 
 public class GlowingFish extends Fish {
-    public void glow() {
-        System.out.println("Unique action: Glow");
+    public String getGlowingFishGlow() {
+        return "Unique action: Glow";
+    }
+
+    public void glowingFishGlow() {
+        System.out.println(getGlowingFishGlow());
     }
 }

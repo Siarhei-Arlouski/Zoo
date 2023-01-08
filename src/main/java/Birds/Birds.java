@@ -3,10 +3,18 @@ package Birds;
 import Interfaces.ActionsInterface;
 
 public class Birds implements ActionsInterface {
-    public void breathe() {
-        System.out.println("Breathing: Through the nostrils");
+    public String getBirdsBreathe() {
+        return "Breathing: Through the nostrils";
     }
-    public void move() {
-        System.out.println("Movement: Flights");
+
+    public String getBirdsMove() {
+        return "Movement: Flights";
+    }
+
+    public void animalBreathe() {
+        System.out.println(getBirdsBreathe());
+    }
+    public void animalMove() {
+        System.out.println(getBirdsMove());
     }
 }

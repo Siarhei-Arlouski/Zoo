@@ -1,7 +1,11 @@
 package Birds;
 
 public class Eagle extends Birds {
-    public void acuteEyesight() {
-        System.out.println("Unique action: Acute eyesight");
+    public String getEagleAcuteEyesight() {
+        return "Unique action: Acute eyesight";
+    }
+
+    public void eagleAcuteEyesight() {
+        System.out.println(getEagleAcuteEyesight());
     }
 }
